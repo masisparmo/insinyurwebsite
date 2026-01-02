@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon (Sama dengan Aplikasi) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><path d=%22M50 10 C25 10 5 30 5 55 L5 70 L95 70 L95 55 C95 30 75 10 50 10 Z%22 fill=%22%23F59E0B%22/><rect x=%220%22 y=%2270%22 width=%22100%22 height=%2215%22 rx=%225%22 fill=%22%23D97706%22/><path d=%22M35 35 L20 50 L35 65 M65 35 L80 50 L65 65%22 stroke=%22white%22 stroke-width=%228%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+
+    <!-- SEO Meta Tags -->
+    <title>Insinyur Website: Bikin Website Profesional Tanpa Coding via AI</title>
+    <meta name="title" content="Insinyur Website: Bikin Website Profesional Tanpa Coding via AI">
+    <meta name="description" content="Buat website profesional instan tanpa coding dengan Insinyur Website. Solusi AI Web Builder terbaik untuk UMKM & Pemula. Cukup ketik, jadi website! Diskon 50% hari ini.">
+    <meta name="keywords" content="buat website tanpa coding, ai web builder indonesia, aplikasi pembuat website umkm, cara membuat landing page murah, insinyur website, isparmo, bikin web instan, template website ai, copywriting otomatis">
+    <meta name="author" content="ISPARMO">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook / WhatsApp Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://page.isparmo.com/">
+    <meta property="og:title" content="Insinyur Website: Solusi Bikin Web Cepat Tanpa Coding">
+    <meta property="og:description" content="Stop bayar programmer mahal! Bikin website profesional dalam hitungan menit pakai AI. Khusus UMKM & Pemula. Diskon 50% Terbatas!">
+    <meta property="og:image" content="https://i.postimg.cc/3xfvrCNX/Insinyur-Website-UI.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://page.isparmo.com/">
+    <meta property="twitter:title" content="Insinyur Website: Solusi Bikin Web Cepat Tanpa Coding">
+    <meta property="twitter:description" content="Stop bayar programmer mahal! Bikin website profesional dalam hitungan menit pakai AI. Khusus UMKM & Pemula.">
+    <meta property="twitter:image" content="https://i.postimg.cc/3xfvrCNX/Insinyur-Website-UI.jpg">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#2563EB',
+                        dark: '#0f172a',
+                        accent: '#F59E0B',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(#1e293b 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-blue-200 selection:text-blue-900">
+
+    <!-- Sticky Top Banner -->
+    <div class="bg-red-600 text-white text-center py-2 text-xs md:text-sm font-bold sticky top-0 z-50 shadow-lg px-4">
+        🔥 PROMO TERBATAS: Diskon 50% hanya untuk 50 Pembeli Pertama!
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern text-white pt-16 pb-24 md:pt-24 md:pb-32 px-4 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="space-y-6 text-center md:text-left">
+                <span class="inline-block py-1 px-3 rounded-full bg-blue-900/50 border border-blue-500 text-blue-300 text-xs font-bold tracking-wider uppercase mb-2">Solusi Website UMKM & Pemula</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                    Ingin Punya Website Tapi <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-400">Nggak Ngerti IT?</span>
+                </h1>
+                <p class="text-slate-300 text-lg md:text-xl leading-relaxed">
+                    Stop bayar jasa programmer mahal! Gunakan <span class="text-white font-bold">Insinyur Website</span> untuk merancang website profesional dalam hitungan menit menggunakan bantuan AI. Cukup ketik, jadi kode.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
+                    <a href="#pricing" class="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold shadow-lg shadow-blue-600/30 transform hover:-translate-y-1 transition text-lg flex items-center justify-center gap-2">
+                        <i class="fas fa-shopping-cart"></i> Ambil Diskon 50%
+                    </a>
+                    <a href="#demo" class="px-8 py-4 bg-slate-700 hover:bg-slate-600 text-white rounded-xl font-bold border border-slate-600 transition text-lg flex items-center justify-center gap-2">
+                        <i class="fas fa-play-circle"></i> Lihat Cara Kerja
+                    </a>
+                </div>
+                <p class="text-xs text-slate-400 mt-2"><i class="fas fa-check-circle text-green-400"></i> Garansi kemudahan penggunaan</p>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-30 animate-pulse-slow"></div>
+                <img src="https://i.postimg.cc/3xfvrCNX/Insinyur-Website-UI.jpg" alt="Preview Aplikasi Insinyur Website" class="relative rounded-xl shadow-2xl border border-slate-700 w-full transform md:rotate-2 hover:rotate-0 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Points (Masalah - Updated Lengkap) -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Realita Pahit Pebisnis Zaman Now</h2>
+                <p class="text-slate-600 text-lg max-w-3xl mx-auto">Aplikasi ini hadir untuk menjawab keresahan banyak pebisnis dan UMKM yang seringkali terjebak dalam masalah berikut:</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Point 1 -->
+                <div class="p-6 bg-red-50 rounded-2xl border border-red-100 hover:shadow-lg transition group">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-red-100 text-red-600 rounded-lg flex items-center justify-center text-xl flex-shrink-0">
+                            <i class="fas fa-store-slash"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 mb-2">Belum Go Digital</h3>
+                            <p class="text-sm text-slate-600 leading-snug">Masih banyak pebisnis/UMKM yang belum Go Digital, minimal belum memiliki website bisnis/jualannya sendiri.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point 2 -->
+                <div class="p-6 bg-orange-50 rounded-2xl border border-orange-100 hover:shadow-lg transition group">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center text-xl flex-shrink-0">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 mb-2">Biaya Jasa Mahal</h3>
+                            <p class="text-sm text-slate-600 leading-snug">Mau bikin website lewat agency atau freelancer? Biaya jasanya seringkali mahal dan menguras modal usaha.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="p-6 bg-yellow-50 rounded-2xl border border-yellow-100 hover:shadow-lg transition group">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-yellow-100 text-yellow-600 rounded-lg flex items-center justify-center text-xl flex-shrink-0">
+                            <i class="fas fa-user-times"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 mb-2">Bukan Orang IT</h3>
+                            <p class="text-sm text-slate-600 leading-snug">Mau bikin website sendiri tidak tahu caranya bagaimana karena bukan orang yang latar belakangnya IT (Gaptek).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point 4 -->
+                <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100 hover:shadow-lg transition group">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xl flex-shrink-0">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 mb-2">Bingung Template</h3>
+                            <p class="text-sm text-slate-600 leading-snug">Sudah tahu cara bikin web gratisan (Blogspot/Wordpress) tapi bingung mau pakai template mana yang cocok.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point 5 -->
+                <div class="p-6 bg-purple-50 rounded-2xl border border-purple-100 hover:shadow-lg transition group">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center text-xl flex-shrink-0">
+                            <i class="fas fa-pen-nib"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 mb-2">Bingung Isi Konten</h3>
+                            <p class="text-sm text-slate-600 leading-snug">Bingung mau diisi apa, bingung mau nulis kata-kata apa yang bisa mempengaruhi calon pembeli (copywriting).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point 6 -->
+                <div class="p-6 bg-slate-100 rounded-2xl border border-slate-200 hover:shadow-lg transition group">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-slate-200 text-slate-600 rounded-lg flex items-center justify-center text-xl flex-shrink-0">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 mb-2">Bingung Perintah AI</h3>
+                            <p class="text-sm text-slate-600 leading-snug">Mau coba bikin website pakai AI tapi bingung perintahnya (prompt) harus ngetik bagaimana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-20 px-4 bg-slate-900 text-white relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl -ml-20 -mb-20 pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 relative z-10">
+                <span class="text-blue-400 font-bold uppercase tracking-widest text-xs">Memperkenalkan Solusi Anda</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold mt-2 mb-6">Insinyur Website</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto text-lg">
+                    Aplikasi berbasis AI yang bertindak sebagai "Penerjemah" keinginan Anda menjadi kode website siap pakai. Tanpa ribet, tanpa mahal.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center text-white text-xl shadow-lg">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">AI Prompt Architect</h4>
+                            <p class="text-slate-400 text-sm">Anda cukup cerita tentang bisnis Anda, aplikasi yang akan merakit kode pemrograman yang rumit untuk Anda.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-600 flex items-center justify-center text-white text-xl shadow-lg">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Micro-Copy Generator</h4>
+                            <p class="text-slate-400 text-sm">Tidak bisa nulis kata-kata promosi? Aplikasi otomatis membuatkan Headline, Keunggulan, dan Kalimat Penutup yang memikat.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-green-600 flex items-center justify-center text-white text-xl shadow-lg">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">WhatsApp Link Generator</h4>
+                            <p class="text-slate-400 text-sm">Otomatis membuat tombol beli yang langsung tersambung ke WhatsApp Anda dengan pesan template yang sudah terisi.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-orange-600 flex items-center justify-center text-white text-xl shadow-lg">
+                            <i class="fas fa-images"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Visual & Image Manager</h4>
+                            <p class="text-slate-400 text-sm">Bisa pakai gambar stok berkualitas (Unsplash) otomatis, atau pakai gambar produk Anda sendiri. Ada fitur preview desain juga!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative bg-slate-800 rounded-2xl p-4 border border-slate-700 shadow-2xl">
+                    <img src="https://i.postimg.cc/3xfvrCNX/Insinyur-Website-UI.jpg" alt="Fitur Insinyur Website" class="rounded-lg w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section (Demo) -->
+    <section id="demo" class="py-20 px-4 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">Simpel & Cepat</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Cukup 5 Langkah Mudah</h2>
+                <p class="text-slate-600 mt-4">Tidak perlu skill coding. Ikuti alur ini dan website Anda siap dalam hitungan menit.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+                <!-- Connecting Line (Desktop) -->
+                <div class="hidden md:block absolute top-12 left-0 right-0 h-1 bg-slate-200 -z-10 transform -translate-y-1/2"></div>
+
+                <!-- Step 1 -->
+                <div class="relative flex flex-col items-center text-center group">
+                    <div class="w-24 h-24 bg-white border-4 border-blue-100 rounded-full flex items-center justify-center text-3xl text-blue-600 shadow-lg mb-6 group-hover:border-blue-500 group-hover:scale-110 transition-all duration-300 z-10">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold border-4 border-white shadow-sm transform translate-x-1/2 -translate-y-1/2">1</div>
+                    <h4 class="font-bold text-lg mb-2">Input Data</h4>
+                    <p class="text-xs text-slate-500 px-2">Masukkan nama bisnis dan jenis usaha Anda.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative flex flex-col items-center text-center group">
+                    <div class="w-24 h-24 bg-white border-4 border-purple-100 rounded-full flex items-center justify-center text-3xl text-purple-600 shadow-lg mb-6 group-hover:border-purple-500 group-hover:scale-110 transition-all duration-300 z-10">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="absolute top-0 right-0 bg-purple-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold border-4 border-white shadow-sm transform translate-x-1/2 -translate-y-1/2">2</div>
+                    <h4 class="font-bold text-lg mb-2">Upload Foto</h4>
+                    <p class="text-xs text-slate-500 px-2">Biarkan AI melihat produk Anda untuk menyesuaikan warna.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative flex flex-col items-center text-center group">
+                    <div class="w-24 h-24 bg-white border-4 border-green-100 rounded-full flex items-center justify-center text-3xl text-green-600 shadow-lg mb-6 group-hover:border-green-500 group-hover:scale-110 transition-all duration-300 z-10">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <div class="absolute top-0 right-0 bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold border-4 border-white shadow-sm transform translate-x-1/2 -translate-y-1/2">3</div>
+                    <h4 class="font-bold text-lg mb-2">Pilih Desain</h4>
+                    <p class="text-xs text-slate-500 px-2">Tentukan layout (Toko/Profil) dan nuansa (Modern/Elegan).</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="relative flex flex-col items-center text-center group">
+                    <div class="w-24 h-24 bg-white border-4 border-orange-100 rounded-full flex items-center justify-center text-3xl text-orange-600 shadow-lg mb-6 group-hover:border-orange-500 group-hover:scale-110 transition-all duration-300 z-10">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <div class="absolute top-0 right-0 bg-orange-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold border-4 border-white shadow-sm transform translate-x-1/2 -translate-y-1/2">4</div>
+                    <h4 class="font-bold text-lg mb-2">Rakit Instruksi</h4>
+                    <p class="text-xs text-slate-500 px-2">Klik tombol, AI akan meracik kode pemrograman rumit untuk Anda.</p>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="relative flex flex-col items-center text-center group">
+                    <div class="w-24 h-24 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-full flex items-center justify-center text-3xl text-white shadow-xl mb-6 group-hover:scale-110 transition-all duration-300 z-10 ring-4 ring-blue-100">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="absolute top-0 right-0 bg-slate-900 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold border-4 border-white shadow-sm transform translate-x-1/2 -translate-y-1/2">5</div>
+                    <h4 class="font-bold text-lg mb-2">Website Jadi!</h4>
+                    <p class="text-xs text-slate-500 px-2">Paste instruksi ke AI, dan website Anda siap online.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <p class="text-lg font-medium text-slate-700 mb-6"><span class="text-blue-600">Insya Allah Akan Digunakan oleh UMKM Seluruh Indonesia</span></p>
+                <a href="#pricing" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold leading-6 text-white transition duration-150 ease-in-out bg-slate-900 border border-transparent rounded-xl hover:bg-slate-800 focus:outline-none focus:border-slate-700 focus:shadow-outline-slate active:bg-slate-900">
+                    Saya Mau Coba Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Offer Section -->
+    <section id="pricing" class="py-24 px-4 bg-gradient-to-b from-slate-50 to-blue-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-200 relative">
+                <!-- Ribbon -->
+                <div class="absolute top-0 right-0">
+                    <div class="w-32 h-8 absolute top-4 -right-8">
+                    </div>
+                    <div class="w-40 h-40 bg-red-600 text-white flex items-center justify-center absolute -top-20 -right-20 transform rotate-45 shadow-lg">
+                        <span class="mt-16 font-bold text-lg">DISKON 50%</span>
+                    </div>
+                </div>
+
+                <div class="p-8 md:p-12 text-center">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-2">Dapatkan Akses Penuh Sekarang!</h2>
+                    <p class="text-slate-500 mb-8">Investasi sekali untuk kemudahan selamanya.</p>
+
+                    <!-- Value Badge (Honest) -->
+                    <div class="inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-bold text-sm mb-8 border border-blue-200">
+                        <i class="fas fa-star text-yellow-500"></i> PROMO SPESIAL: HARGA TERBAIK BULAN INI
+                    </div>
+
+                    <div class="flex flex-col items-center justify-center gap-2 mb-8">
+                        <span class="text-slate-400 text-xl line-through font-semibold">Rp 150.000</span>
+                        <div class="flex items-start justify-center gap-1">
+                            <span class="text-slate-800 text-2xl font-bold mt-2">Rp</span>
+                            <span class="text-6xl font-extrabold text-blue-600">75.000</span>
+                        </div>
+                        <p class="text-sm text-slate-500">Harga secangkir kopi untuk website bisnis Anda.</p>
+                    </div>
+
+                    <a href="http://lynk.id/kangmasis/6xe7zvl66vo7" target="_blank" class="w-full md:w-2/3 block mx-auto py-5 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-2xl font-extrabold text-xl shadow-xl shadow-blue-500/30 transform hover:-translate-y-1 transition duration-200">
+                        BELI APLIKASI SEKARANG <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    
+                    <p class="mt-4 text-xs text-slate-400">Pembelian aman melalui sistem pembayaran di lynk.id</p>
+                </div>
+                
+                <div class="bg-slate-50 p-6 border-t border-slate-100">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fas fa-bolt text-blue-500 text-xl"></i>
+                            <span class="text-xs font-semibold text-slate-600">Akses Instan</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fas fa-infinity text-blue-500 text-xl"></i>
+                            <span class="text-xs font-semibold text-slate-600">Lifetime Access</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fas fa-book text-blue-500 text-xl"></i>
+                            <span class="text-xs font-semibold text-slate-600">Panduan Lengkap</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fas fa-headset text-blue-500 text-xl"></i>
+                            <span class="text-xs font-semibold text-slate-600">Support Dev</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-8">Pertanyaan yang Sering Diajukan</h2>
+            <div class="space-y-4">
+                <details class="group bg-slate-50 p-4 rounded-xl cursor-pointer">
+                    <summary class="flex justify-between items-center font-semibold text-slate-700 list-none">
+                        Apakah saya harus bisa coding?
+                        <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="text-slate-600 mt-3 text-sm">Sama sekali TIDAK. Aplikasi ini yang akan menulis kode untuk Anda. Tugas Anda hanya mengisi formulir data bisnis dan memilih desain.</p>
+                </details>
+                <details class="group bg-slate-50 p-4 rounded-xl cursor-pointer">
+                    <summary class="flex justify-between items-center font-semibold text-slate-700 list-none">
+                        Apakah ada biaya bulanan?
+                        <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="text-slate-600 mt-3 text-sm">Tidak ada. Ini adalah pembelian sekali bayar (One-time payment) untuk selamanya.</p>
+                </details>
+                <details class="group bg-slate-50 p-4 rounded-xl cursor-pointer">
+                    <summary class="flex justify-between items-center font-semibold text-slate-700 list-none">
+                        Apa yang saya dapatkan setelah membayar?
+                        <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="text-slate-600 mt-3 text-sm">Anda akan mendapatkan <strong>link akses aplikasi Insinyur Website</strong> yang bekerja secara eksklusif di dalam lingkungan Gemini. Karena menggunakan teknologi Gemini AI, Anda <strong>wajib login menggunakan akun Gmail</strong> untuk mengakses dan menggunakannya.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="bg-slate-900 text-white py-12 px-4 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-xl font-bold mb-6">Butuh Bantuan atau Konsultasi?</h3>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
+                <a href="https://wa.me/628121083060" class="flex items-center gap-2 hover:text-green-400 transition">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-xs text-slate-400">WhatsApp</div>
+                        <div class="font-bold">0812-1083-060</div>
+                    </div>
+                </a>
+                <a href="mailto:mail@isparmo.com" class="flex items-center gap-2 hover:text-blue-400 transition">
+                    <i class="fas fa-envelope text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-xs text-slate-400">Email</div>
+                        <div class="font-bold">mail@isparmo.com</div>
+                    </div>
+                </a>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-user-circle text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-xs text-slate-400">Developer</div>
+                        <div class="font-bold">ISPARMO</div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-slate-500 text-xs">
+                &copy; 2026 Insinyur Website. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile Buy Button (Visible only on Scroll) -->
+    <div id="stickyCTA" class="fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-slate-200 shadow-2xl transform translate-y-full transition-transform duration-300 md:hidden z-40">
+        <a href="http://lynk.id/kangmasis/6xe7zvl66vo7" class="block w-full py-3 bg-blue-600 text-white text-center font-bold rounded-lg shadow-md">
+            Beli Sekarang - Rp 75.000
+        </a>
+    </div>
+
+    <script>
+        // Simple script to show sticky CTA on scroll for mobile
+        window.addEventListener('scroll', () => {
+            const cta = document.getElementById('stickyCTA');
+            if (window.scrollY > 500) {
+                cta.classList.remove('translate-y-full');
+            } else {
+                cta.classList.add('translate-y-full');
+            }
+        });
+    </script>
+</body>
+</html>
